@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",                 // Puedes ajustar esto según el soporte del navegador.
+    "module": "es2015",              // Usa módulos ES para compatibilidad web.
+    "outDir": "./dist",              // Directorio de salida para los archivos compilados.
+    "rootDir": "./src",              // Directorio raíz de tus archivos TypeScript.
+    "moduleResolution": "node",      // Sistema de resolución de módulos.
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*"                       // Asegúrate de que tus archivos estén en el directorio `src`.
+  ]
+}

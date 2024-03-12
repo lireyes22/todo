@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Dados</title>
+</head>
+
+<body>
+    <h1>Juego de Dados</h1>
+    <button id="startGame">Iniciar Juego</button>
+    <button id="playTurn" style="display: none;">Lanzar Dados</button>
+    <div id="gameStatus"></div>
+    <table id="tablaHistorial">
+        <thead>
+            <tr>
+                <th>Jugada</th>
+                <th>Puntos Jugador 1</th>
+                <th>Puntos Jugador 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se añadirán dinámicamente aquí -->
+        </tbody>
+    </table>
+
+
+    <script type="module" src="dist/index.js"></script>
+</body>
+
+</html>
