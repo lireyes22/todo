@@ -1,0 +1,18 @@
+flex lexico.l
+bison -yd infija/sintactico.y
+bison -Wcounterexamples -d infija/sintactico.y
+gcc y.tab.c lex.yy.c -lfl -o practica
+
+flex lexico.l
+bison -yd prefija/sintactico.y
+bison -Wcounterexamples -d prefija/sintactico.y
+gcc y.tab.c lex.yy.c -lfl -o practica
+
+flex lexico.l
+bison -yd sufija/sintactico.y
+bison -Wcounterexamples -d sufija/sintactico.y
+gcc y.tab.c lex.yy.c -lfl -o practica
+
+./practica < infija/infija.txt
+./practica < prefija/prefija.txt
+./practica < sufija/sufija.txt
